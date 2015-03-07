@@ -21,6 +21,7 @@ angular
 
 #### controller 파일 수정
 > app/scripts/controllers/main.js 파일 수정.
+
 ```
 angular.module('todoApp')
   .controller('todoController', function ($scope) {
@@ -35,6 +36,7 @@ angular.module('todoApp')
 
 #### html 파일 수정
 > app/index.html 파일 수정
+
 ```
 <html ng-app="todoApp">
 
