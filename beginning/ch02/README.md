@@ -27,7 +27,7 @@ Run `grunt serve`
 grunt serve 
 ```
 
-Modify app/index.html  
+Modify app/index.html
 
 ### ● Step02: AngularJS 적용
 
@@ -50,6 +50,8 @@ angular
 
 #### controller 파일 수정
 > app/scripts/controllers/main.js 파일 수정.
+
+```
 angular.module('todoApp')
   .controller('todoController', function ($scope) {
     $scope.todoList = [
@@ -59,10 +61,11 @@ angular.module('todoApp')
     ]
     $scope.appName = 'AngularJS TODO APP';
   });
-
+```
 
 #### html 파일 수정
 > app/index.html 파일 수정
+
 ```
 <html ng-app="todoApp">
 
