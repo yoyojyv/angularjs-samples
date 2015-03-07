@@ -23,7 +23,7 @@
 
     <h1>{{appName}}</h1>
 
-    <p>전체 할 일 <strong>2</strong>개 / 남은 할일은 <strong>1</strong>개 [<a href="">보관하기</a>]</p>
+    <p>전체 할 일 <strong>{{todoList.length}}</strong>개 / 남은 할일은 <strong>{{remain()}}</strong>개 [<a href="" ng-click="archive()">보관하기</a>]</p>
 
     <ul>
       <li ng-repeat="todo in todoList" class="checkbox">
@@ -31,12 +31,12 @@
       </li>
     </ul>
 
-    <form name="newItemForm" class="form-inline" action="">
+    <form name="newItemForm" class="form-inline">
       <div class="form-group">
         <label class="sr-only" for="newItemText">새로운 할 일</label>
-        <input type="text" class="form-control" id="newItemText" name="newItemText" placeholder="새로운 할 일">
+        <input type="text" class="form-control" id="newItemText" name="newItemText" placeholder="새로운 할 일" ng-model="newTitle">
       </div>
-      <button type="submit" class="btn btn-default">추가</button>
+      <button type="submit" class="btn btn-default" ng-click="addNewTodo(newTitle)">추가</button>
     </form>
 
   </div>
