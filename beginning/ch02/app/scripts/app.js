@@ -8,26 +8,37 @@
  *
  * Main module of the application.
  */
+//angular
+//  .module('ch02App', [
+//    'ngAnimate',
+//    'ngCookies',
+//    'ngResource',
+//    'ngRoute',
+//    'ngSanitize',
+//    'ngTouch'
+//  ])
+//  .config(function ($routeProvider) {
+//    $routeProvider
+//      .when('/', {
+//        templateUrl: 'views/main.html',
+//        controller: 'MainCtrl'
+//      })
+//      .when('/about', {
+//        templateUrl: 'views/about.html',
+//        controller: 'AboutCtrl'
+//      })
+//      .otherwise({
+//        redirectTo: '/'
+//      });
+//  });
+
+
 angular
-  .module('ch02App', [
+  .module('todoApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
     'ngTouch'
-  ])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
-  });
+  ]);
